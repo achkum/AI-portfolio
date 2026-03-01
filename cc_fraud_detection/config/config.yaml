@@ -1,0 +1,29 @@
+data:
+  raw_path: "data/creditcard.csv"
+  random_state: 42
+
+model:
+  autoencoder:
+    input_dim: 29
+    hidden_dims: [16, 8, 16]
+    learning_rate: 0.001
+    epochs: 50
+    batch_size: 64
+  vae:
+    input_dim: 29
+    latent_dim: 4
+    hidden_dims: [16, 8]
+    learning_rate: 0.001
+    epochs: 50
+    batch_size: 64
+  random_forest:
+    n_estimators: 100
+    random_state: 42
+
+output:
+  figures_path: "output/figures/"
+  report_path: "output/report/"
+  notebooks_path: "output/notebooks/"
+
+evaluation:
+  fpr_thresholds: [0.001, 0.005, 0.01]
