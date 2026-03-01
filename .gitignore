@@ -1,3 +1,6 @@
+# CSV data files
+*.csv
+
 # Large data files exceeding GitHub's 100MB limit
 immigration_integration/datasource/raw/scb/TAB3200_en.csv
 immigration_integration/datasource/raw/scb/TAB5278_en.csv
