@@ -1,0 +1,103 @@
+# ============================================================
+# Immigration Integration Analysis - Main Configuration
+# ============================================================
+
+paths:
+  raw_data_dir: "datasource/raw"
+  processed_data_dir: "datasource/processed"
+  figures_dir: "figures"
+  report_dir: "report"
+  
+  scb:
+    employment: "datasource/raw/scb/TAB3200_en.csv"
+    income: "datasource/raw/scb/TAB5278_en.csv"
+    self_sufficiency: "datasource/raw/scb/TAB6766_en.csv"
+  
+  migrationsverket:
+    asylum: "datasource/raw/migrationsverket/"
+    permits: "datasource/raw/migrationsverket/"
+  
+  socialstyrelsen:
+    assistance: "datasource/raw/socialstyrelsen/Statistikdatabasen_2026-02-28 21_05_04.csv"
+  
+  processed:
+    integration_by_country: "datasource/processed/integration_by_country.csv"
+    merged_national: "datasource/processed/merged_national.csv"
+
+data:
+  time_period:
+    start_year: 2013
+    end_year: 2024
+  scb_separator: ","
+  scb_encoding: "ISO-8859-1"
+  soc_separator: ";"
+  mv_sheet_name: 0
+
+# Mapping from SCB/MV labels to standardised categories
+birth_region_mapping:
+  "born in sweden": "Sweden"
+  "sweden": "Sweden"
+  "sverige": "Sweden"
+  "all regions of birth": "Total"
+  "foreign born": "Foreign Born (Total)"
+  "foreign-born total": "Foreign Born (Total)"
+  "foreign-born": "Foreign Born (Total)"
+  "nordic countries excluding sweden": "Nordic (excl. Sweden)"
+  "nordic countries except sweden": "Nordic (excl. Sweden)"
+  "eu excluding nordic countries": "EU/EFTA (excl. Nordic)"
+  "eu28 except nordic countries": "EU/EFTA (excl. Nordic)"
+  "eu27_2020 except nordic countries": "EU/EFTA (excl. Nordic)"
+  "europe except eu and the nordic countries": "Europe (excl. EU/EFTA)"
+  "europe except eu28 and nordic countries": "Europe (excl. EU/EFTA)"
+  "europe except eu27_2020 and nordic countries": "Europe (excl. EU/EFTA)"
+  "africa": "Africa"
+  "asia": "Asia"
+  "north america": "North America"
+  "south america": "South America"
+  "oceania": "Oceania"
+  "soviet union": "Europe (excl. EU/EFTA)"
+  "unknown": "Other"
+  "inrikes födda": "Sweden"
+  "utrikes födda": "Foreign Born (Total)"
+
+# Nationality mapping for Migrationsverket (Swedish names)
+# mapping specifically to the regions used in SCB for better joins
+nationality_to_region:
+  "syrien": "Asia"
+  "irak": "Asia"
+  "afghanistan": "Asia"
+  "eritrea": "Africa"
+  "somalia": "Africa"
+  "etiopien": "Africa"
+  "marocko": "Africa"
+  "turkiet": "Asia"
+  "iran": "Asia"
+  "pakistan": "Asia"
+  "indien": "Asia"
+  "kina": "Asia"
+  "thailand": "Asia"
+  "usa": "North America"
+  "chile": "South America"
+  "colombia": "South America"
+  "polen": "EU/EFTA (excl. Nordic)"
+  "tyskland": "EU/EFTA (excl. Nordic)"
+  "ryssland": "Europe (excl. EU/EFTA)"
+  "ukraina": "Europe (excl. EU/EFTA)"
+  "finland": "Nordic (excl. Sweden)"
+  "danmark": "Nordic (excl. Sweden)"
+  "norge": "Nordic (excl. Sweden)"
+  "island": "Nordic (excl. Sweden)"
+
+model:
+  gradient_descent:
+    learning_rate: 0.01
+    iterations: 2000
+    tolerance: 1.0e-7
+  
+  random_forest:
+    n_estimators: 200
+    max_depth: 15
+    random_state: 42
+  
+  test_size: 0.2
+  cross_validation_folds: 5

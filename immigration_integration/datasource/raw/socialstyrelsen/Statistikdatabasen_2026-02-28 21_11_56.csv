@@ -1,0 +1,939 @@
+﻿Ekonomiskt bistånd, Antal biståndsmottagare 18 år och äldre, Ålder: 18-65+
+Region;Kön;2021;2022;2023;2024
+Riket;Män;116293;100795;90416;88013
+Riket;Kvinnor;106919;96887;86727;86003
+Riket;Båda könen;223212;197682;177145;174016
+Stockholms län;Män;18030;15813;14350;14346
+Stockholms län;Kvinnor;16915;15284;13788;14034
+Stockholms län;Båda könen;34945;31097;28139;28380
+Upplands Väsby;Män;356;311;298;273
+Upplands Väsby;Kvinnor;350;308;293;277
+Upplands Väsby;Båda könen;706;619;591;550
+Vallentuna;Män;174;140;130;134
+Vallentuna;Kvinnor;173;154;145;161
+Vallentuna;Båda könen;347;294;275;295
+Österåker;Män;209;183;170;165
+Österåker;Kvinnor;201;161;147;166
+Österåker;Båda könen;410;344;317;331
+Värmdö;Män;334;261;206;210
+Värmdö;Kvinnor;298;265;212;215
+Värmdö;Båda könen;632;526;418;425
+Järfälla;Män;695;662;577;560
+Järfälla;Kvinnor;744;696;589;595
+Järfälla;Båda könen;1439;1358;1166;1155
+Ekerö;Män;206;212;203;199
+Ekerö;Kvinnor;247;240;220;200
+Ekerö;Båda könen;453;452;423;399
+Huddinge;Män;744;597;553;539
+Huddinge;Kvinnor;674;599;545;560
+Huddinge;Båda könen;1418;1196;1099;1099
+Botkyrka;Män;1063;921;738;713
+Botkyrka;Kvinnor;1127;971;875;792
+Botkyrka;Båda könen;2190;1892;1613;1505
+Salem;Män;117;75;71;78
+Salem;Kvinnor;117;92;93;84
+Salem;Båda könen;234;167;164;162
+Haninge;Män;982;865;765;858
+Haninge;Kvinnor;869;800;700;786
+Haninge;Båda könen;1851;1665;1465;1644
+Tyresö;Män;266;245;227;269
+Tyresö;Kvinnor;249;253;197;252
+Tyresö;Båda könen;515;498;424;521
+Upplands­Bro;Män;280;246;236;236
+Upplands­Bro;Kvinnor;328;276;256;262
+Upplands­Bro;Båda könen;608;522;492;498
+Nykvarn;Män;80;81;83;100
+Nykvarn;Kvinnor;75;82;96;109
+Nykvarn;Båda könen;155;163;179;209
+Täby;Män;317;272;206;218
+Täby;Kvinnor;217;212;162;147
+Täby;Båda könen;534;484;368;365
+Danderyd;Män;117;114;124;95
+Danderyd;Kvinnor;91;99;92;87
+Danderyd;Båda könen;208;213;216;182
+Sollentuna;Män;465;374;352;380
+Sollentuna;Kvinnor;454;393;356;368
+Sollentuna;Båda könen;919;767;708;748
+Stockholm;Män;8498;7543;6982;7029
+Stockholm;Kvinnor;7435;6777;6260;6438
+Stockholm;Båda könen;15933;14320;13242;13467
+Södertälje;Män;1047;897;871;881
+Södertälje;Kvinnor;1259;1119;1019;970
+Södertälje;Båda könen;2306;2016;1890;1851
+Nacka;Män;520;406;339;313
+Nacka;Kvinnor;521;397;322;305
+Nacka;Båda könen;1041;803;661;618
+Sundbyberg;Män;370;292;269;255
+Sundbyberg;Kvinnor;401;350;284;288
+Sundbyberg;Båda könen;771;642;553;543
+Solna;Män;209;161;145;153
+Solna;Kvinnor;218;153;122;151
+Solna;Båda könen;427;314;267;304
+Lidingö;Män;129;111;79;84
+Lidingö;Kvinnor;147;135;114;104
+Lidingö;Båda könen;276;246;193;188
+Vaxholm;Män;73;78;67;47
+Vaxholm;Kvinnor;58;62;68;61
+Vaxholm;Båda könen;131;140;135;108
+Norrtälje;Män;641;578;503;449
+Norrtälje;Kvinnor;510;486;452;440
+Norrtälje;Båda könen;1151;1064;955;889
+Sigtuna;Män;321;260;245;252
+Sigtuna;Kvinnor;359;302;278;308
+Sigtuna;Båda könen;680;562;523;560
+Nynäshamn;Män;279;238;233;234
+Nynäshamn;Kvinnor;261;221;237;258
+Nynäshamn;Båda könen;540;459;470;492
+Uppsala län;Män;5014;4316;3806;3709
+Uppsala län;Kvinnor;4687;4319;3814;3862
+Uppsala län;Båda könen;9701;8635;7620;7571
+Håbo;Män;172;122;111;127
+Håbo;Kvinnor;156;126;108;139
+Håbo;Båda könen;328;248;219;266
+Älvkarleby;Män;151;148;125;130
+Älvkarleby;Kvinnor;117;117;107;111
+Älvkarleby;Båda könen;268;265;232;241
+Knivsta;Män;87;90;72;86
+Knivsta;Kvinnor;71;86;78;110
+Knivsta;Båda könen;158;176;150;196
+Heby;Män;­­;213;219;213
+Heby;Kvinnor;­­;219;205;195
+Heby;Båda könen;­­;432;424;408
+Tierp;Män;256;220;177;175
+Tierp;Kvinnor;284;254;228;202
+Tierp;Båda könen;540;474;405;377
+Uppsala;Män;3461;2950;2624;2492
+Uppsala;Kvinnor;3252;2945;2605;2575
+Uppsala;Båda könen;6713;5895;5229;5067
+Enköping;Män;576;500;415;412
+Enköping;Kvinnor;556;520;445;474
+Enköping;Båda könen;1132;1020;860;886
+Östhammar;Män;113;94;92;93
+Östhammar;Kvinnor;92;87;72;82
+Östhammar;Båda könen;205;181;164;175
+Södermanlands län;Män;5028;4293;3732;3621
+Södermanlands län;Kvinnor;5077;4514;4005;3854
+Södermanlands län;Båda könen;10105;8807;7737;7475
+Vingåker;Män;215;156;129;115
+Vingåker;Kvinnor;200;162;143;136
+Vingåker;Båda könen;415;318;272;251
+Gnesta;Män;80;81;68;81
+Gnesta;Kvinnor;76;76;69;70
+Gnesta;Båda könen;156;157;137;151
+Nyköping;Män;863;774;666;701
+Nyköping;Kvinnor;918;838;723;707
+Nyköping;Båda könen;1781;1612;1389;1408
+Oxelösund;Män;146;138;124;94
+Oxelösund;Kvinnor;126;118;103;76
+Oxelösund;Båda könen;272;256;227;170
+Flen;Män;374;336;300;273
+Flen;Kvinnor;347;312;299;267
+Flen;Båda könen;721;648;599;540
+Katrineholm;Män;518;455;418;427
+Katrineholm;Kvinnor;552;503;446;441
+Katrineholm;Båda könen;1070;958;864;868
+Eskilstuna;Män;2353;2002;1718;1651
+Eskilstuna;Kvinnor;2456;2204;1963;1901
+Eskilstuna;Båda könen;4809;4206;3681;3552
+Strängnäs;Män;465;338;292;263
+Strängnäs;Kvinnor;399;285;246;254
+Strängnäs;Båda könen;864;623;538;517
+Trosa;Män;56;33;46;47
+Trosa;Kvinnor;46;37;47;37
+Trosa;Båda könen;102;70;93;84
+Östergötlands län;Män;6290;5696;5202;4985
+Östergötlands län;Kvinnor;6029;5676;5130;4992
+Östergötlands län;Båda könen;12319;11372;10332;9977
+Ödeshög;Män;51;51;55;57
+Ödeshög;Kvinnor;43;47;37;44
+Ödeshög;Båda könen;94;98;92;101
+Ydre;Män;45;37;33;27
+Ydre;Kvinnor;32;26;30;25
+Ydre;Båda könen;77;63;63;52
+Kinda;Män;130;119;102;96
+Kinda;Kvinnor;128;110;91;90
+Kinda;Båda könen;258;229;193;186
+Boxholm;Män;63;70;52;53
+Boxholm;Kvinnor;75;75;59;73
+Boxholm;Båda könen;138;145;111;126
+Åtvidaberg;Män;111;98;83;93
+Åtvidaberg;Kvinnor;82;69;71;72
+Åtvidaberg;Båda könen;193;167;154;165
+Finspång;Män;350;329;286;248
+Finspång;Kvinnor;274;272;224;208
+Finspång;Båda könen;624;601;510;456
+Valdemarsvik;Män;53;53;78;88
+Valdemarsvik;Kvinnor;34;43;60;75
+Valdemarsvik;Båda könen;87;96;138;163
+Linköping;Män;2430;2265;1976;1880
+Linköping;Kvinnor;2408;2324;2129;2031
+Linköping;Båda könen;4838;4589;4105;3911
+Norrköping;Män;2082;1817;1734;1696
+Norrköping;Kvinnor;2078;1882;1691;1644
+Norrköping;Båda könen;4160;3699;3425;3340
+Söderköping;Män;156;126;129;109
+Söderköping;Kvinnor;114;104;89;91
+Söderköping;Båda könen;270;230;218;200
+Motala;Män;528;468;423;393
+Motala;Kvinnor;496;462;421;402
+Motala;Båda könen;1024;930;844;795
+Vadstena;Män;76;69;61;41
+Vadstena;Kvinnor;68;68;48;35
+Vadstena;Båda könen;144;137;109;76
+Mjölby;Män;271;245;240;259
+Mjölby;Kvinnor;248;237;220;248
+Mjölby;Båda könen;519;482;460;507
+Jönköpings län;Män;4132;3487;3180;3277
+Jönköpings län;Kvinnor;3674;3352;3009;3042
+Jönköpings län;Båda könen;7806;6839;6189;6319
+Aneby;Män;106;79;80;69
+Aneby;Kvinnor;81;79;73;62
+Aneby;Båda könen;187;158;153;131
+Gnosjö;Män;123;94;87;72
+Gnosjö;Kvinnor;81;75;78;71
+Gnosjö;Båda könen;204;169;165;143
+Mullsjö;Män;63;66;56;66
+Mullsjö;Kvinnor;61;67;56;69
+Mullsjö;Båda könen;124;133;112;135
+Habo;Män;106;109;91;76
+Habo;Kvinnor;67;57;50;67
+Habo;Båda könen;173;166;141;143
+Gislaved;Män;210;159;147;158
+Gislaved;Kvinnor;219;182;160;152
+Gislaved;Båda könen;429;341;307;310
+Vaggeryd;Män;140;105;99;122
+Vaggeryd;Kvinnor;96;75;72;91
+Vaggeryd;Båda könen;236;180;171;213
+Jönköping;Män;1364;1132;1056;1089
+Jönköping;Kvinnor;1153;1028;902;923
+Jönköping;Båda könen;2517;2160;1958;2012
+Nässjö;Män;585;510;470;489
+Nässjö;Kvinnor;644;573;507;513
+Nässjö;Båda könen;1229;1083;977;1002
+Värnamo;Män;257;202;188;214
+Värnamo;Kvinnor;251;225;198;225
+Värnamo;Båda könen;508;427;386;439
+Sävsjö;Män;178;176;176;174
+Sävsjö;Kvinnor;170;168;176;174
+Sävsjö;Båda könen;348;344;352;348
+Vetlanda;Män;319;274;265;316
+Vetlanda;Kvinnor;255;264;270;270
+Vetlanda;Båda könen;574;538;535;586
+Eksjö;Män;337;299;252;227
+Eksjö;Kvinnor;271;259;231;227
+Eksjö;Båda könen;608;558;483;454
+Tranås;Män;403;334;263;262
+Tranås;Kvinnor;376;335;269;240
+Tranås;Båda könen;779;669;532;502
+Kronobergs län;Män;2427;2110;2008;2005
+Kronobergs län;Kvinnor;2229;1984;1824;1892
+Kronobergs län;Båda könen;4656;4094;3832;3897
+Uppvidinge;Män;160;131;116;110
+Uppvidinge;Kvinnor;145;111;108;103
+Uppvidinge;Båda könen;305;242;224;213
+Lessebo;Män;170;105;91;92
+Lessebo;Kvinnor;135;99;75;81
+Lessebo;Båda könen;305;204;166;173
+Tingsryd;Män;174;146;126;118
+Tingsryd;Kvinnor;155;144;102;93
+Tingsryd;Båda könen;329;290;228;211
+Alvesta;Män;293;297;268;281
+Alvesta;Kvinnor;332;293;273;265
+Alvesta;Båda könen;625;590;541;546
+Älmhult;Män;331;289;245;172
+Älmhult;Kvinnor;283;252;213;174
+Älmhult;Båda könen;614;541;458;346
+Markaryd;Män;62;36;27;26
+Markaryd;Kvinnor;49;30;21;30
+Markaryd;Båda könen;111;66;48;56
+Växjö;Män;1023;932;975;1046
+Växjö;Kvinnor;942;882;861;962
+Växjö;Båda könen;1965;1814;1836;2008
+Ljungby;Män;257;193;184;182
+Ljungby;Kvinnor;225;196;194;208
+Ljungby;Båda könen;482;389;378;390
+Kalmar län;Män;2315;2023;1776;1731
+Kalmar län;Kvinnor;1997;1887;1655;1694
+Kalmar län;Båda könen;4312;3910;3431;3425
+Högsby;Män;87;64;51;61
+Högsby;Kvinnor;80;67;56;66
+Högsby;Båda könen;167;131;107;127
+Torsås;Män;89;92;66;65
+Torsås;Kvinnor;71;76;48;51
+Torsås;Båda könen;160;168;114;116
+Mörbylånga;Män;75;59;61;45
+Mörbylånga;Kvinnor;58;54;50;40
+Mörbylånga;Båda könen;133;113;111;85
+Hultsfred;Män;194;171;136;129
+Hultsfred;Kvinnor;174;161;130;132
+Hultsfred;Båda könen;368;332;266;261
+Mönsterås;Män;163;122;104;109
+Mönsterås;Kvinnor;138;121;94;96
+Mönsterås;Båda könen;301;243;198;205
+Emmaboda;Män;176;154;140;116
+Emmaboda;Kvinnor;149;141;126;112
+Emmaboda;Båda könen;325;295;266;228
+Kalmar;Män;492;493;474;478
+Kalmar;Kvinnor;447;487;448;464
+Kalmar;Båda könen;939;980;922;942
+Nybro;Män;218;203;165;183
+Nybro;Kvinnor;179;163;145;169
+Nybro;Båda könen;397;366;310;352
+Oskarshamn;Män;296;234;206;208
+Oskarshamn;Kvinnor;273;230;222;240
+Oskarshamn;Båda könen;569;464;428;448
+Västervik;Män;330;287;235;227
+Västervik;Kvinnor;269;236;197;214
+Västervik;Båda könen;599;523;432;441
+Vimmerby;Män;131;86;88;61
+Vimmerby;Kvinnor;120;86;84;70
+Vimmerby;Båda könen;251;172;172;131
+Borgholm;Män;99;91;79;79
+Borgholm;Kvinnor;70;91;78;67
+Borgholm;Båda könen;169;182;157;146
+Gotlands län;Män;791;590;580;571
+Gotlands län;Kvinnor;653;519;504;449
+Gotlands län;Båda könen;1444;1109;1084;1020
+Gotland;Män;791;590;580;571
+Gotland;Kvinnor;653;519;504;449
+Gotland;Båda könen;1444;1109;1084;1020
+Blekinge län;Män;1706;1487;1297;1206
+Blekinge län;Kvinnor;1359;1252;1171;1159
+Blekinge län;Båda könen;3065;2739;2468;2365
+Olofström;Män;37;45;43;63
+Olofström;Kvinnor;28;37;27;60
+Olofström;Båda könen;65;82;70;123
+Karlskrona;Män;670;572;474;398
+Karlskrona;Kvinnor;498;465;421;383
+Karlskrona;Båda könen;1168;1037;895;781
+Ronneby;Män;525;459;415;365
+Ronneby;Kvinnor;456;400;387;354
+Ronneby;Båda könen;981;859;802;719
+Karlshamn;Män;368;316;286;299
+Karlshamn;Kvinnor;304;286;265;281
+Karlshamn;Båda könen;672;602;551;580
+Sölvesborg;Män;113;105;93;88
+Sölvesborg;Kvinnor;83;75;79;90
+Sölvesborg;Båda könen;196;180;172;178
+Skåne län;Män;19977;17129;15308;14653
+Skåne län;Kvinnor;18936;16952;15227;14952
+Skåne län;Båda könen;38913;34081;30536;29605
+Svalöv;Män;126;105;83;86
+Svalöv;Kvinnor;81;81;58;66
+Svalöv;Båda könen;207;186;141;152
+Staffanstorp;Män;129;118;126;127
+Staffanstorp;Kvinnor;126;113;125;139
+Staffanstorp;Båda könen;255;231;251;266
+Burlöv;Män;227;193;177;154
+Burlöv;Kvinnor;203;164;157;144
+Burlöv;Båda könen;430;357;334;298
+Vellinge;Män;85;68;­­;64
+Vellinge;Kvinnor;76;68;­­;52
+Vellinge;Båda könen;161;136;­­;116
+Östra Göinge;Män;254;243;210;201
+Östra Göinge;Kvinnor;236;235;195;185
+Östra Göinge;Båda könen;490;478;405;386
+Örkelljunga;Män;136;97;97;77
+Örkelljunga;Kvinnor;131;116;115;102
+Örkelljunga;Båda könen;267;213;212;179
+Bjuv;Män;190;158;133;135
+Bjuv;Kvinnor;202;169;130;145
+Bjuv;Båda könen;392;327;263;280
+Kävlinge;Män;151;156;132;143
+Kävlinge;Kvinnor;114;122;107;126
+Kävlinge;Båda könen;265;278;239;269
+Lomma;Män;113;102;98;101
+Lomma;Kvinnor;101;94;94;115
+Lomma;Båda könen;214;196;192;216
+Svedala;Män;171;166;146;146
+Svedala;Kvinnor;148;130;143;139
+Svedala;Båda könen;319;296;289;285
+Skurup;Män;150;121;108;100
+Skurup;Kvinnor;131;95;96;90
+Skurup;Båda könen;281;216;204;190
+Sjöbo;Män;164;126;132;136
+Sjöbo;Kvinnor;146;134;137;142
+Sjöbo;Båda könen;310;260;269;278
+Hörby;Män;161;142;122;103
+Hörby;Kvinnor;133;121;112;111
+Hörby;Båda könen;294;263;234;214
+Höör;Män;148;116;103;104
+Höör;Kvinnor;112;100;92;116
+Höör;Båda könen;260;216;195;220
+Tomelilla;Män;114;82;71;77
+Tomelilla;Kvinnor;110;96;90;113
+Tomelilla;Båda könen;224;178;161;190
+Bromölla;Män;121;94;91;101
+Bromölla;Kvinnor;92;85;75;90
+Bromölla;Båda könen;213;179;166;191
+Osby;Män;200;168;136;126
+Osby;Kvinnor;197;184;167;175
+Osby;Båda könen;397;352;303;301
+Perstorp;Män;137;­­;140;141
+Perstorp;Kvinnor;145;­­;135;123
+Perstorp;Båda könen;282;­­;275;264
+Klippan;Män;193;160;148;144
+Klippan;Kvinnor;171;157;138;137
+Klippan;Båda könen;364;317;286;281
+Åstorp;Män;241;191;162;151
+Åstorp;Kvinnor;244;240;198;170
+Åstorp;Båda könen;485;431;360;321
+Båstad;Män;123;113;81;59
+Båstad;Kvinnor;95;89;72;59
+Båstad;Båda könen;218;202;153;118
+Malmö;Män;8692;7161;6335;6042
+Malmö;Kvinnor;8587;7258;6472;6228
+Malmö;Båda könen;17279;14419;12807;12270
+Lund;Män;1391;1256;1176;1097
+Lund;Kvinnor;1265;1180;1112;1055
+Lund;Båda könen;2656;2436;2289;2152
+Landskrona;Män;603;536;451;433
+Landskrona;Kvinnor;613;554;477;486
+Landskrona;Båda könen;1216;1090;928;919
+Helsingborg;Män;2679;2277;2061;1978
+Helsingborg;Kvinnor;2490;2252;2107;2017
+Helsingborg;Båda könen;5169;4529;4168;3995
+Höganäs;Män;187;164;159;150
+Höganäs;Kvinnor;142;136;135;142
+Höganäs;Båda könen;329;300;294;292
+Eslöv;Män;471;428;416;409
+Eslöv;Kvinnor;432;418;386;411
+Eslöv;Båda könen;903;846;802;820
+Ystad;Män;222;208;186;163
+Ystad;Kvinnor;187;185;158;165
+Ystad;Båda könen;409;393;344;328
+Trelleborg;Män;415;405;383;416
+Trelleborg;Kvinnor;434;396;373;404
+Trelleborg;Båda könen;849;801;756;820
+Kristianstad;Män;1228;1060;886;809
+Kristianstad;Kvinnor;1044;1068;919;889
+Kristianstad;Båda könen;2272;2128;1805;1698
+Simrishamn;Män;173;142;124;138
+Simrishamn;Kvinnor;159;133;133;139
+Simrishamn;Båda könen;332;275;257;277
+Ängelholm;Män;330;295;305;268
+Ängelholm;Kvinnor;340;294;267;252
+Ängelholm;Båda könen;670;589;572;520
+Hässleholm;Män;654;624;565;556
+Hässleholm;Kvinnor;639;642;530;521
+Hässleholm;Båda könen;1293;1266;1095;1077
+Hallands län;Män;2715;2368;2084;1979
+Hallands län;Kvinnor;2301;2151;1941;1947
+Hallands län;Båda könen;5016;4519;4025;3926
+Hylte;Män;238;189;133;124
+Hylte;Kvinnor;209;189;140;123
+Hylte;Båda könen;447;378;273;247
+Halmstad;Män;856;760;691;676
+Halmstad;Kvinnor;736;701;635;657
+Halmstad;Båda könen;1592;1461;1326;1333
+Laholm;Män;241;200;182;164
+Laholm;Kvinnor;224;210;193;172
+Laholm;Båda könen;465;410;375;336
+Falkenberg;Män;432;375;341;329
+Falkenberg;Kvinnor;355;346;311;323
+Falkenberg;Båda könen;787;721;652;652
+Varberg;Män;471;433;416;402
+Varberg;Kvinnor;393;352;337;380
+Varberg;Båda könen;864;785;753;782
+Kungsbacka;Män;493;436;337;301
+Kungsbacka;Kvinnor;414;372;347;305
+Kungsbacka;Båda könen;907;808;684;606
+Västra Götalands län;Män;19684;16758;14728;14594
+Västra Götalands län;Kvinnor;17958;16025;13916;14004
+Västra Götalands län;Båda könen;37642;32783;28644;28598
+Härryda;Män;249;235;223;194
+Härryda;Kvinnor;246;214;173;187
+Härryda;Båda könen;495;449;396;381
+Partille;Män;362;295;275;277
+Partille;Kvinnor;289;227;222;235
+Partille;Båda könen;651;522;497;512
+Öckerö;Män;105;91;80;74
+Öckerö;Kvinnor;68;69;67;65
+Öckerö;Båda könen;173;160;147;139
+Stenungsund;Män;229;207;196;198
+Stenungsund;Kvinnor;217;194;179;176
+Stenungsund;Båda könen;446;401;375;374
+Tjörn;Män;122;121;110;102
+Tjörn;Kvinnor;96;103;85;99
+Tjörn;Båda könen;218;224;195;201
+Orust;Män;139;124;109;118
+Orust;Kvinnor;102;97;86;105
+Orust;Båda könen;241;221;195;223
+Sotenäs;Män;102;73;61;61
+Sotenäs;Kvinnor;78;65;51;67
+Sotenäs;Båda könen;180;138;112;128
+Munkedal;Män;155;128;141;141
+Munkedal;Kvinnor;128;115;118;112
+Munkedal;Båda könen;283;243;259;253
+Tanum;Män;126;102;88;74
+Tanum;Kvinnor;91;89;79;69
+Tanum;Båda könen;217;191;167;143
+Dals­Ed;Män;73;65;49;46
+Dals­Ed;Kvinnor;56;53;46;44
+Dals­Ed;Båda könen;129;118;95;90
+Färgelanda;Män;148;155;126;78
+Färgelanda;Kvinnor;123;134;100;74
+Färgelanda;Båda könen;271;289;226;152
+Ale;Män;282;229;205;233
+Ale;Kvinnor;254;213;197;210
+Ale;Båda könen;536;442;402;443
+Lerum;Män;321;275;225;222
+Lerum;Kvinnor;264;248;237;203
+Lerum;Båda könen;585;523;462;425
+Vårgårda;Män;102;83;68;65
+Vårgårda;Kvinnor;101;96;97;86
+Vårgårda;Båda könen;203;179;165;151
+Bollebygd;Män;77;56;41;43
+Bollebygd;Kvinnor;64;59;43;45
+Bollebygd;Båda könen;141;115;84;88
+Grästorp;Män;36;28;28;25
+Grästorp;Kvinnor;30;22;20;27
+Grästorp;Båda könen;66;50;48;52
+Essunga;Män;84;77;72;64
+Essunga;Kvinnor;75;67;61;57
+Essunga;Båda könen;159;144;133;121
+Karlsborg;Män;77;59;51;51
+Karlsborg;Kvinnor;63;54;43;44
+Karlsborg;Båda könen;140;113;94;95
+Gullspång;Män;71;95;77;68
+Gullspång;Kvinnor;63;74;61;57
+Gullspång;Båda könen;134;169;138;125
+Tranemo;Män;109;86;93;86
+Tranemo;Kvinnor;81;74;71;74
+Tranemo;Båda könen;190;160;164;160
+Bengtsfors;Män;196;140;110;85
+Bengtsfors;Kvinnor;164;139;95;87
+Bengtsfors;Båda könen;360;279;205;172
+Mellerud;Män;119;89;78;78
+Mellerud;Kvinnor;117;96;69;72
+Mellerud;Båda könen;236;185;147;150
+Lilla Edet;Män;115;110;108;89
+Lilla Edet;Kvinnor;122;121;107;68
+Lilla Edet;Båda könen;237;231;215;157
+Mark;Män;293;250;243;249
+Mark;Kvinnor;280;244;205;244
+Mark;Båda könen;573;494;448;493
+Svenljunga;Män;115;90;83;92
+Svenljunga;Kvinnor;112;102;88;81
+Svenljunga;Båda könen;227;192;171;173
+Herrljunga;Män;72;67;62;63
+Herrljunga;Kvinnor;61;59;49;51
+Herrljunga;Båda könen;133;126;111;114
+Vara;Män;213;181;133;147
+Vara;Kvinnor;205;171;111;134
+Vara;Båda könen;418;352;244;281
+Götene;Män;122;96;70;76
+Götene;Kvinnor;115;89;60;58
+Götene;Båda könen;237;185;130;134
+Tibro;Män;145;131;109;118
+Tibro;Kvinnor;138;121;112;117
+Tibro;Båda könen;283;252;221;235
+Töreboda;Män;159;117;96;85
+Töreboda;Kvinnor;137;115;95;85
+Töreboda;Båda könen;296;232;191;170
+Göteborg;Män;8417;7198;6256;6231
+Göteborg;Kvinnor;7876;6879;5965;5946
+Göteborg;Båda könen;16293;14077;12221;12177
+Mölndal;Män;611;503;445;414
+Mölndal;Kvinnor;521;477;387;376
+Mölndal;Båda könen;1132;980;832;790
+Kungälv;Män;328;292;268;235
+Kungälv;Kvinnor;316;299;268;230
+Kungälv;Båda könen;644;591;536;465
+Lysekil;Män;236;160;133;117
+Lysekil;Kvinnor;202;141;117;140
+Lysekil;Båda könen;438;301;250;257
+Uddevalla;Män;937;773;647;653
+Uddevalla;Kvinnor;805;733;632;638
+Uddevalla;Båda könen;1742;1506;1279;1291
+Strömstad;Män;119;96;75;91
+Strömstad;Kvinnor;93;73;70;80
+Strömstad;Båda könen;212;169;145;171
+Vänersborg;Män;596;510;423;409
+Vänersborg;Kvinnor;528;473;453;461
+Vänersborg;Båda könen;1124;983;876;870
+Trollhättan;Män;812;677;574;525
+Trollhättan;Kvinnor;825;733;621;601
+Trollhättan;Båda könen;1637;1410;1195;1126
+Alingsås;Män;302;258;257;295
+Alingsås;Kvinnor;285;272;237;271
+Alingsås;Båda könen;587;530;494;566
+Borås;Män;849;731;720;804
+Borås;Kvinnor;805;748;735;782
+Borås;Båda könen;1654;1479;1455;1586
+Ulricehamn;Män;201;156;140;142
+Ulricehamn;Kvinnor;191;151;128;141
+Ulricehamn;Båda könen;392;307;268;283
+Åmål;Män;250;236;199;185
+Åmål;Kvinnor;212;209;183;176
+Åmål;Båda könen;462;445;382;361
+Mariestad;Män;232;201;182;198
+Mariestad;Kvinnor;189;179;166;167
+Mariestad;Båda könen;421;380;348;365
+Lidköping;Män;316;296;244;263
+Lidköping;Kvinnor;323;304;255;257
+Lidköping;Båda könen;639;600;499;520
+Skara;Män;237;208;189;170
+Skara;Kvinnor;219;216;182;188
+Skara;Båda könen;456;424;371;358
+Skövde;Män;365;290;269;291
+Skövde;Kvinnor;328;307;254;275
+Skövde;Båda könen;693;597;523;566
+Hjo;Män;115;89;101;90
+Hjo;Kvinnor;97;84;65;76
+Hjo;Båda könen;212;173;166;166
+Tidaholm;Män;158;135;123;107
+Tidaholm;Kvinnor;134;114;102;101
+Tidaholm;Båda könen;292;249;225;208
+Falköping;Män;525;409;371;367
+Falköping;Kvinnor;490;422;389;376
+Falköping;Båda könen;1015;831;760;743
+Värmlands län;Män;4272;3745;3376;3247
+Värmlands län;Kvinnor;3586;3310;2949;2907
+Värmlands län;Båda könen;7858;7055;6325;6154
+Kil;Män;171;148;134;132
+Kil;Kvinnor;141;134;124;117
+Kil;Båda könen;312;282;258;249
+Eda;Män;108;96;90;87
+Eda;Kvinnor;76;77;69;76
+Eda;Båda könen;184;173;159;163
+Torsby;Män;180;150;144;125
+Torsby;Kvinnor;151;116;113;101
+Torsby;Båda könen;331;266;257;226
+Storfors;Män;41;47;38;41
+Storfors;Kvinnor;42;41;39;39
+Storfors;Båda könen;83;88;77;80
+Hammarö;Män;114;101;83;74
+Hammarö;Kvinnor;112;113;101;102
+Hammarö;Båda könen;226;214;184;176
+Munkfors;Män;63;64;42;36
+Munkfors;Kvinnor;41;34;21;30
+Munkfors;Båda könen;104;98;63;66
+Forshaga;Män;177;149;123;­­
+Forshaga;Kvinnor;140;138;117;­­
+Forshaga;Båda könen;317;287;240;­­
+Grums;Män;150;119;113;112
+Grums;Kvinnor;123;94;83;78
+Grums;Båda könen;273;213;196;190
+Årjäng;Män;137;113;101;91
+Årjäng;Kvinnor;104;92;78;79
+Årjäng;Båda könen;241;205;179;170
+Sunne;Män;163;141;130;120
+Sunne;Kvinnor;123;123;100;89
+Sunne;Båda könen;286;264;230;209
+Karlstad;Män;1367;1207;1122;1122
+Karlstad;Kvinnor;1142;1079;977;994
+Karlstad;Båda könen;2509;2286;2099;2116
+Kristinehamn;Män;517;453;439;401
+Kristinehamn;Kvinnor;444;393;352;322
+Kristinehamn;Båda könen;961;846;791;723
+Filipstad;Män;329;293;246;223
+Filipstad;Kvinnor;283;282;258;233
+Filipstad;Båda könen;612;575;504;456
+Hagfors;Män;181;148;130;128
+Hagfors;Kvinnor;121;121;93;93
+Hagfors;Båda könen;302;269;223;221
+Arvika;Män;330;296;279;284
+Arvika;Kvinnor;303;254;242;272
+Arvika;Båda könen;633;550;521;556
+Säffle;Män;315;271;221;210
+Säffle;Kvinnor;305;275;240;206
+Säffle;Båda könen;620;546;461;416
+Örebro län;Män;3998;3395;3122;3104
+Örebro län;Kvinnor;3915;3462;3093;3149
+Örebro län;Båda könen;7913;6857;6215;6253
+Lekeberg;Män;83;74;63;70
+Lekeberg;Kvinnor;68;72;58;62
+Lekeberg;Båda könen;151;146;121;132
+Laxå;Män;37;44;37;­­
+Laxå;Kvinnor;47;50;48;­­
+Laxå;Båda könen;84;94;85;­­
+Hallsberg;Män;144;113;104;119
+Hallsberg;Kvinnor;170;124;114;133
+Hallsberg;Båda könen;314;237;218;252
+Degerfors;Män;234;213;189;197
+Degerfors;Kvinnor;223;186;153;169
+Degerfors;Båda könen;457;399;342;366
+Hällefors;Män;168;114;102;75
+Hällefors;Kvinnor;154;105;94;73
+Hällefors;Båda könen;322;219;196;148
+Ljusnarsberg;Män;95;88;87;72
+Ljusnarsberg;Kvinnor;82;72;68;60
+Ljusnarsberg;Båda könen;177;160;155;132
+Örebro;Män;2047;1761;1675;1706
+Örebro;Kvinnor;2060;1838;1666;1784
+Örebro;Båda könen;4107;3599;3341;3490
+Kumla;Män;226;187;163;156
+Kumla;Kvinnor;242;207;181;160
+Kumla;Båda könen;468;394;344;316
+Askersund;Män;86;84;70;­­
+Askersund;Kvinnor;80;83;68;­­
+Askersund;Båda könen;166;167;138;­­
+Karlskoga;Män;432;358;328;323
+Karlskoga;Kvinnor;410;400;357;332
+Karlskoga;Båda könen;842;758;685;655
+Nora;Män;155;123;106;119
+Nora;Kvinnor;119;100;95;103
+Nora;Båda könen;274;223;201;222
+Lindesberg;Män;353;272;238;210
+Lindesberg;Kvinnor;315;261;220;203
+Lindesberg;Båda könen;668;533;458;413
+Västmanlands län;Män;3557;3054;2788;2713
+Västmanlands län;Kvinnor;3687;3325;2955;2826
+Västmanlands län;Båda könen;7244;6379;5743;5539
+Skinnskatteberg;Män;60;57;61;52
+Skinnskatteberg;Kvinnor;55;48;45;55
+Skinnskatteberg;Båda könen;115;105;106;107
+Surahammar;Män;100;85;80;79
+Surahammar;Kvinnor;95;80;76;62
+Surahammar;Båda könen;195;165;156;141
+Kungsör;Män;129;117;105;119
+Kungsör;Kvinnor;131;131;102;103
+Kungsör;Båda könen;260;248;207;222
+Hallstahammar;Män;139;121;112;113
+Hallstahammar;Kvinnor;152;123;101;99
+Hallstahammar;Båda könen;291;244;213;212
+Norberg;Män;139;105;82;68
+Norberg;Kvinnor;126;101;94;77
+Norberg;Båda könen;265;206;176;145
+Västerås;Män;2022;1706;1531;1480
+Västerås;Kvinnor;2134;1925;1721;1665
+Västerås;Båda könen;4156;3631;3252;3145
+Sala;Män;201;190;185;172
+Sala;Kvinnor;209;202;182;171
+Sala;Båda könen;410;392;367;343
+Fagersta;Män;241;240;219;221
+Fagersta;Kvinnor;263;259;247;213
+Fagersta;Båda könen;504;499;466;434
+Köping;Män;361;303;307;295
+Köping;Kvinnor;352;290;282;264
+Köping;Båda könen;713;593;589;559
+Arboga;Män;190;156;133;146
+Arboga;Kvinnor;209;184;137;144
+Arboga;Båda könen;399;340;270;290
+Dalarnas län;Män;4218;3682;3253;3021
+Dalarnas län;Kvinnor;3880;3483;3153;3040
+Dalarnas län;Båda könen;8098;7165;6406;6061
+Vansbro;Män;77;70;71;71
+Vansbro;Kvinnor;63;53;60;45
+Vansbro;Båda könen;140;123;131;116
+Malung­Sälen;Män;111;88;80;79
+Malung­Sälen;Kvinnor;83;80;75;72
+Malung­Sälen;Båda könen;194;168;155;151
+Gagnef;Män;86;69;67;62
+Gagnef;Kvinnor;58;54;60;62
+Gagnef;Båda könen;144;123;127;124
+Leksand;Män;164;141;120;110
+Leksand;Kvinnor;116;97;74;76
+Leksand;Båda könen;280;238;194;186
+Rättvik;Män;119;108;95;71
+Rättvik;Kvinnor;102;99;84;69
+Rättvik;Båda könen;221;207;179;140
+Orsa;Män;102;91;82;83
+Orsa;Kvinnor;79;77;65;66
+Orsa;Båda könen;181;168;147;149
+Älvdalen;Män;54;53;51;43
+Älvdalen;Kvinnor;71;63;55;51
+Älvdalen;Båda könen;125;116;106;94
+Smedjebacken;Män;140;116;91;90
+Smedjebacken;Kvinnor;94;84;84;87
+Smedjebacken;Båda könen;234;200;175;177
+Mora;Män;203;199;151;141
+Mora;Kvinnor;162;166;127;144
+Mora;Båda könen;365;365;278;285
+Falun;Män;654;574;507;474
+Falun;Kvinnor;624;543;496;506
+Falun;Båda könen;1278;1117;1003;980
+Borlänge;Män;1153;1007;950;920
+Borlänge;Kvinnor;1150;1048;1001;982
+Borlänge;Båda könen;2303;2055;1951;1902
+Säter;Män;90;79;70;63
+Säter;Kvinnor;81;85;72;58
+Säter;Båda könen;171;164;142;121
+Hedemora;Män;266;232;192;161
+Hedemora;Kvinnor;231;215;175;148
+Hedemora;Båda könen;497;447;367;309
+Avesta;Män;406;340;281;270
+Avesta;Kvinnor;441;355;322;316
+Avesta;Båda könen;847;695;603;586
+Ludvika;Män;633;562;485;420
+Ludvika;Kvinnor;557;502;440;398
+Ludvika;Båda könen;1190;1064;925;818
+Gävleborgs län;Män;4668;4187;3900;3626
+Gävleborgs län;Kvinnor;4227;4030;3819;3635
+Gävleborgs län;Båda könen;8895;8217;7719;7261
+Ockelbo;Män;102;81;89;70
+Ockelbo;Kvinnor;83;86;90;85
+Ockelbo;Båda könen;185;167;179;155
+Hofors;Män;140;152;136;102
+Hofors;Kvinnor;117;130;109;99
+Hofors;Båda könen;257;282;245;201
+Ovanåker;Män;228;178;143;126
+Ovanåker;Kvinnor;147;132;123;127
+Ovanåker;Båda könen;375;310;266;253
+Nordanstig;Män;108;94;85;70
+Nordanstig;Kvinnor;131;112;86;67
+Nordanstig;Båda könen;239;206;171;137
+Ljusdal;Män;220;146;103;116
+Ljusdal;Kvinnor;196;141;100;107
+Ljusdal;Båda könen;416;287;203;223
+Gävle;Män;1867;1633;1559;1473
+Gävle;Kvinnor;1742;1537;1529;1480
+Gävle;Båda könen;3609;3170;3088;2953
+Sandviken;Män;472;508;477;418
+Sandviken;Kvinnor;463;607;544;458
+Sandviken;Båda könen;935;1115;1021;876
+Söderhamn;Män;600;596;576;529
+Söderhamn;Kvinnor;528;575;555;537
+Söderhamn;Båda könen;1128;1171;1131;1066
+Bollnäs;Män;386;345;339;365
+Bollnäs;Kvinnor;340;318;339;338
+Bollnäs;Båda könen;726;663;678;703
+Hudiksvall;Män;590;494;433;399
+Hudiksvall;Kvinnor;534;446;383;380
+Hudiksvall;Båda könen;1124;940;816;779
+Västernorrlands län;Män;2944;2658;2431;2327
+Västernorrlands län;Kvinnor;2561;2408;2166;2131
+Västernorrlands län;Båda könen;5505;5066;4597;4458
+Ånge;Män;113;100;88;83
+Ånge;Kvinnor;84;74;72;68
+Ånge;Båda könen;197;174;160;151
+Timrå;Män;197;191;191;185
+Timrå;Kvinnor;208;175;187;180
+Timrå;Båda könen;405;366;378;365
+Härnösand;Män;324;291;273;­­
+Härnösand;Kvinnor;251;268;248;­­
+Härnösand;Båda könen;575;559;521;­­
+Sundsvall;Män;1170;1088;1049;991
+Sundsvall;Kvinnor;1010;992;892;910
+Sundsvall;Båda könen;2180;2080;1941;1901
+Kramfors;Män;314;273;248;215
+Kramfors;Kvinnor;255;231;210;190
+Kramfors;Båda könen;569;504;458;405
+Sollefteå;Män;213;231;195;197
+Sollefteå;Kvinnor;192;190;163;171
+Sollefteå;Båda könen;405;421;358;368
+Örnsköldsvik;Män;639;508;417;402
+Örnsköldsvik;Kvinnor;584;499;413;380
+Örnsköldsvik;Båda könen;1223;1007;830;782
+Jämtlands län;Män;1492;1270;1148;1117
+Jämtlands län;Kvinnor;1203;1077;1006;1051
+Jämtlands län;Båda könen;2695;2347;2154;2168
+Ragunda;Män;68;52;53;50
+Ragunda;Kvinnor;61;55;41;39
+Ragunda;Båda könen;129;107;94;89
+Bräcke;Män;107;103;88;88
+Bräcke;Kvinnor;77;66;66;68
+Bräcke;Båda könen;184;169;154;156
+Krokom;Män;116;95;97;88
+Krokom;Kvinnor;93;82;76;81
+Krokom;Båda könen;209;177;173;169
+Strömsund;Män;215;177;165;144
+Strömsund;Kvinnor;182;156;145;136
+Strömsund;Båda könen;397;333;310;280
+Åre;Män;106;80;62;70
+Åre;Kvinnor;83;68;57;67
+Åre;Båda könen;189;148;119;137
+Berg;Män;71;66;51;63
+Berg;Kvinnor;71;54;60;62
+Berg;Båda könen;142;120;111;125
+Härjedalen;Män;90;67;53;55
+Härjedalen;Kvinnor;49;55;46;38
+Härjedalen;Båda könen;139;122;99;93
+Östersund;Män;736;649;592;580
+Östersund;Kvinnor;598;551;532;572
+Östersund;Båda könen;1334;1200;1124;1152
+Västerbottens län;Män;2670;2313;2005;1830
+Västerbottens län;Kvinnor;2208;1948;1666;1507
+Västerbottens län;Båda könen;4878;4261;3671;3337
+Nordmaling;Män;87;­­;56;44
+Nordmaling;Kvinnor;82;­­;47;39
+Nordmaling;Båda könen;169;­­;103;83
+Bjurholm;Män;21;24;20;17
+Bjurholm;Kvinnor;32;32;27;20
+Bjurholm;Båda könen;53;56;47;37
+Vindeln;Män;73;40;29;31
+Vindeln;Kvinnor;43;30;26;23
+Vindeln;Båda könen;116;70;55;54
+Robertsfors;Män;39;37;37;35
+Robertsfors;Kvinnor;34;36;38;37
+Robertsfors;Båda könen;73;73;75;72
+Norsjö;Män;44;26;20;12
+Norsjö;Kvinnor;31;21;17;14
+Norsjö;Båda könen;75;47;37;26
+Malå;Män;45;42;42;31
+Malå;Kvinnor;35;38;37;33
+Malå;Båda könen;80;80;79;64
+Storuman;Män;58;56;47;30
+Storuman;Kvinnor;61;43;38;30
+Storuman;Båda könen;119;99;85;60
+Sorsele;Män;47;36;23;21
+Sorsele;Kvinnor;20;18;23;17
+Sorsele;Båda könen;67;54;46;38
+Dorotea;Män;47;43;40;42
+Dorotea;Kvinnor;25;37;36;32
+Dorotea;Båda könen;72;80;76;74
+Vännäs;Män;99;75;50;49
+Vännäs;Kvinnor;78;72;56;45
+Vännäs;Båda könen;177;147;106;94
+Vilhelmina;Män;70;64;48;42
+Vilhelmina;Kvinnor;62;64;45;35
+Vilhelmina;Båda könen;132;128;93;77
+Åsele;Män;33;30;33;20
+Åsele;Kvinnor;25;20;11;13
+Åsele;Båda könen;58;50;44;33
+Umeå;Män;1073;951;852;819
+Umeå;Kvinnor;921;805;741;710
+Umeå;Båda könen;1994;1756;1593;1529
+Lycksele;Män;193;177;176;154
+Lycksele;Kvinnor;183;167;141;116
+Lycksele;Båda könen;376;344;317;270
+Skellefteå;Män;767;645;549;499
+Skellefteå;Kvinnor;592;498;403;355
+Skellefteå;Båda könen;1359;1143;952;854
+Norrbottens län;Män;2320;2023;1832;1730
+Norrbottens län;Kvinnor;1780;1613;1432;1349
+Norrbottens län;Båda könen;4100;3636;3264;3079
+Arvidsjaur;Män;58;55;40;35
+Arvidsjaur;Kvinnor;54;44;40;39
+Arvidsjaur;Båda könen;112;99;80;74
+Arjeplog;Män;14;11;X;X
+Arjeplog;Kvinnor;13;6;X;X
+Arjeplog;Båda könen;27;17;12;10
+Jokkmokk;Män;37;26;26;23
+Jokkmokk;Kvinnor;28;22;20;26
+Jokkmokk;Båda könen;65;48;46;49
+Överkalix;Män;45;40;36;37
+Överkalix;Kvinnor;28;22;27;31
+Överkalix;Båda könen;73;62;63;68
+Kalix;Män;205;­­;150;­­
+Kalix;Kvinnor;130;­­;101;­­
+Kalix;Båda könen;335;­­;251;­­
+Övertorneå;Män;42;33;37;33
+Övertorneå;Kvinnor;25;20;26;35
+Övertorneå;Båda könen;67;53;63;68
+Pajala;Män;32;29;X;X
+Pajala;Kvinnor;32;27;X;X
+Pajala;Båda könen;64;56;28;13
+Gällivare;Män;102;99;­­;­­
+Gällivare;Kvinnor;56;66;­­;­­
+Gällivare;Båda könen;158;165;­­;­­
+Älvsbyn;Män;99;62;61;65
+Älvsbyn;Kvinnor;65;53;46;50
+Älvsbyn;Båda könen;164;115;107;115
+Luleå;Män;754;649;599;564
+Luleå;Kvinnor;606;565;513;480
+Luleå;Båda könen;1360;1214;1112;1044
+Piteå;Män;323;281;250;217
+Piteå;Kvinnor;288;225;184;168
+Piteå;Båda könen;611;506;434;385
+Boden;Män;327;310;282;­­
+Boden;Kvinnor;244;232;202;­­
+Boden;Båda könen;571;542;484;­­
+Haparanda;Män;129;112;120;107
+Haparanda;Kvinnor;106;104;108;76
+Haparanda;Båda könen;235;216;228;183
+Kiruna;Män;192;145;131;134
+Kiruna;Kvinnor;127;121;100;78
+Kiruna;Båda könen;319;266;231;212
+Socialstyrelsens statistikdatabas 2026-02-28
