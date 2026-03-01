@@ -1,0 +1,29 @@
+# Large data files exceeding GitHub's 100MB limit
+immigration_integration/datasource/raw/scb/TAB3200_en.csv
+immigration_integration/datasource/raw/scb/TAB5278_en.csv
+immigration_integration/datasource/raw/scb/TAB6766_en.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
