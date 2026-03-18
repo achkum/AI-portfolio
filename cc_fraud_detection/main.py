@@ -1,11 +1,8 @@
-import sklearn
+import re
 from pathlib import Path
 import numpy as np
 import torch
 from sklearn.model_selection import cross_val_predict
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.linear_model import LogisticRegression
-from xgboost import XGBClassifier
 from loader import CreditCardDataLoader
 from models import (Autoencoder, VAE, OneClassSVMModel, RandomForestModel,
                     LogisticRegressionModel, XGBoostModel, HybridModel,
@@ -20,17 +17,20 @@ DATA = ROOT / 'creditcard.csv'
 def main():
     torch.manual_seed(1)
     np.random.seed(1)
-    print('--- Fraud Detection Pipeline ---')
+
+    print('=' * 62)
+    print('   Credit Card Fraud Detection — Evaluation Pipeline')
+    print('=' * 62)
 
     # ------------------------------------------------------------------
     # 1. Data loading and preprocessing
     # ------------------------------------------------------------------
+    print('\n[1/9] Loading and preprocessing data...')
     loader = CreditCardDataLoader()
-    try:
-        train_df, test_df = loader.load_and_split(DATA)
-    except FileNotFoundError:
-        print(f'Error: creditcard.csv not found at {DATA}')
-        return
+    if not DATA.exists():
+        print('  Dataset not found locally — downloading from Kaggle...')
+        loader.download_from_kaggle(ROOT)
+    train_df, test_df = loader.load_and_split(DATA)
 
     X_unsupervised = loader.get_unsupervised_train(train_df)
     X_train, y_train = loader.get_supervised_data(train_df)
@@ -41,51 +41,44 @@ def main():
     # ------------------------------------------------------------------
     # 2. EDA visualisations
     # ------------------------------------------------------------------
-    print('Generating EDA visualizations...')
+    print('\n[2/9] Generating exploratory data analysis (EDA) figures...')
     viz.plot_class_balance(loader.eda_df)
-    viz.plot_feature_distributions(loader.eda_df, feature='Amount')
     viz.plot_feature_boxplots(loader.eda_df)
+    viz.plot_feature_correlation(loader.eda_df, loader.FEATURES)
     viz.plot_correlation_heatmap(loader.eda_df)
-
-    print('Generating post-standardization visualizations...')
-    viz.plot_scaling_effect(train_df)
+    viz.plot_amount_distributions(loader.eda_df)
 
     # ------------------------------------------------------------------
     # 3. Train unsupervised models
     # ------------------------------------------------------------------
     train_cfg = dict(learning_rate=0.001, epochs=50, batch_size=512)
 
-    print('Training Autoencoder...')
+    print('\n[3/9] Training unsupervised anomaly detection models...')
+    print('  Training Autoencoder (AE)...')
     ae = Autoencoder()
     ae.train_model(X_unsupervised, train_cfg)
 
-    print('Training VAE...')
+    print('  Training Variational Autoencoder (VAE)...')
     vae = VAE()
     vae.train_model(X_unsupervised, train_cfg)
 
-    # Training loss curves
-    print('Saving training loss curves...')
-    viz.plot_training_loss({
-        'Autoencoder (MSE)': ae.loss_history,
-        'VAE (ELBO)': vae.loss_history,
-    })
-
-    print('Training One-Class SVM...')
+    print('  Training One-Class SVM...')
     ocsvm = OneClassSVMModel(kernel='rbf', gamma='scale', nu=0.01)
     ocsvm.train_model(X_unsupervised)
 
     # ------------------------------------------------------------------
     # 4. Train supervised models
     # ------------------------------------------------------------------
-    print('Training Random Forest...')
+    print('\n[4/9] Training supervised classification models...')
+    print('  Training Random Forest...')
     rf = RandomForestModel(n_estimators=100, max_depth=30, min_samples_leaf=2, random_state=42)
     rf.train_model(X_train, y_train)
 
-    print('Training Logistic Regression...')
+    print('  Training Logistic Regression...')
     lr = LogisticRegressionModel(random_state=42)
     lr.train_model(X_train, y_train)
 
-    print('Training XGBoost...')
+    print('  Training XGBoost...')
     xgb = XGBoostModel(n_estimators=100, max_depth=6, learning_rate=0.1,
                         subsample=0.8, colsample_bytree=0.8, random_state=42)
     xgb.train_model(X_train, y_train)
@@ -93,7 +86,7 @@ def main():
     # ------------------------------------------------------------------
     # 5. Generate anomaly scores on test set
     # ------------------------------------------------------------------
-    print('Generating anomaly scores...')
+    print('\n[5/9] Generating anomaly scores on the test set...')
     ae_test_scores = ae.predict_anomaly(X_test)
     vae_test_scores = vae.predict_anomaly(X_test)
     ocsvm_test_scores = ocsvm.predict_anomaly(X_test)
@@ -104,37 +97,22 @@ def main():
     # ------------------------------------------------------------------
     # 6. Hybrid stacking: combine all model scores via meta-learner
     # ------------------------------------------------------------------
+    print('\n[6/9] Building hybrid stacking ensembles...')
     # Unsupervised train scores (trained on legit-only data)
     ae_train_scores = ae.predict_anomaly(X_train)
     vae_train_scores = vae.predict_anomaly(X_train)
     ocsvm_train_scores = ocsvm.predict_anomaly(X_train)
 
-    # OOF scores for supervised models only
-    print('Generating OOF scores for supervised models...')
+    # Out-of-fold (OOF) scores for supervised models to avoid data leakage
+    print('  Generating out-of-fold scores for supervised models (3-fold CV)...')
     oof_cv = 3
-    rf_oof = cross_val_predict(
-        RandomForestClassifier(
-            n_estimators=100, max_depth=30, min_samples_leaf=2,
-            random_state=42, class_weight='balanced', n_jobs=-1
-        ),
-        X_train, y_train, cv=oof_cv, method='predict_proba', n_jobs=-1)[:, 1]
-    lr_oof = cross_val_predict(
-        LogisticRegression(
-            random_state=42, max_iter=1000,
-            class_weight='balanced', solver='lbfgs'
-        ),
-        X_train, y_train, cv=oof_cv, method='predict_proba', n_jobs=-1)[:, 1]
-    xgb_oof = cross_val_predict(
-        XGBClassifier(
-            n_estimators=100, max_depth=6, learning_rate=0.1,
-            subsample=0.8, colsample_bytree=0.8, random_state=42,
-            scale_pos_weight=(y_train == 0).sum() / (y_train == 1).sum(),
-            eval_metric='logloss', n_jobs=1
-        ),
-        X_train, y_train, cv=oof_cv, method='predict_proba', n_jobs=-1)[:, 1]
+    rf_oof  = cross_val_predict(rf.model,  X_train, y_train, cv=oof_cv, method='predict_proba', n_jobs=-1)[:, 1]
+    lr_oof  = cross_val_predict(lr.model,  X_train, y_train, cv=oof_cv, method='predict_proba', n_jobs=-1)[:, 1]
+    xgb_oof = cross_val_predict(xgb.model, X_train, y_train, cv=oof_cv, method='predict_proba', n_jobs=-1)[:, 1]
+    print('  Out-of-fold scores computed for RF, LR, and XGBoost.')
 
-    # --- Hybrid 1: Unsupervised-only scores only ---
-    print('Training Hybrid (Unsupervised scores only)...')
+    # --- Hybrid 1: Meta-learner on unsupervised scores only ---
+    print('  Training Hybrid meta-learner (unsupervised scores)...')
     hybrid_unsup = HybridModel(n_estimators=100, max_depth=30, min_samples_leaf=2, random_state=42)
     hybrid_unsup.train_model(X_train, y_train, {
         'AE': ae_train_scores, 'VAE': vae_train_scores,
@@ -145,8 +123,8 @@ def main():
         'OCSVM': ocsvm_test_scores,
     })
 
-    # --- Hybrid 2: Full stacking (all model scores) ---
-    print('Training Hybrid (Full Stacking)...')
+    # --- Hybrid 2: Meta-learner on all model scores (full stacking) ---
+    print('  Training Hybrid meta-learner (full stacking — all model scores)...')
     hybrid_stack = HybridModel(n_estimators=100, max_depth=30, min_samples_leaf=2, random_state=42)
     hybrid_stack.train_model(X_train, y_train, {
         'AE': ae_train_scores, 'VAE': vae_train_scores,
@@ -162,7 +140,7 @@ def main():
     # ------------------------------------------------------------------
     # 7. Evaluate all models
     # ------------------------------------------------------------------
-    print('Evaluating...')
+    print('\n[7/9] Evaluating all models on the held-out test set...')
     model_scores = {
         'Autoencoder': ae_test_scores,
         'VAE': vae_test_scores,
@@ -179,13 +157,13 @@ def main():
         y_test, model_scores,
         fpr_thresholds=[0.001, 0.005, 0.01]
     )
-    print('\nEvaluation Summary:')
+    print('\n  Evaluation Summary (FPR thresholds: 0.1%, 0.5%, 1.0%):')
     print(results.to_string(index=False))
 
     # ------------------------------------------------------------------
     # 8. Save evaluation figures
     # ------------------------------------------------------------------
-    print(f'\nSaving figures to {FIGURES}...')
+    print(f'\n[8/9] Generating and saving evaluation figures to: {FIGURES}')
     viz.plot_pr_curves(y_test, model_scores)
     viz.plot_roc_curves(y_test, model_scores)
 
@@ -199,62 +177,38 @@ def main():
         model_name='VAE', filename='error_dist_vae.png'
     )
 
-    # Confusion matrices at 1% FPR
-    _, hybrid_unsup_threshold = evaluator.calculate_recall_at_fpr(
-        y_test, hybrid_unsup_test_scores, fpr_threshold=0.01
-    )
-    viz.plot_confusion_matrix(
-        y_test, hybrid_unsup_test_scores, threshold=hybrid_unsup_threshold,
-        model_name='Hybrid (Unsup.) @ 1% FPR',
-        filename='confusion_matrix_hybrid_unsup.png'
-    )
+    # Confusion matrices at 1% FPR for all models
+    for model_name, scores in model_scores.items():
+        _, thr = evaluator.calculate_recall_at_fpr(y_test, scores, fpr_threshold=0.01)
+        safe_name = re.sub(r'[^a-z0-9]+', '_', model_name.lower()).strip('_')
+        viz.plot_confusion_matrix(
+            y_test, scores, threshold=thr,
+            model_name=f'{model_name} @ 1% FPR',
+            filename=f'confusion_matrix_{safe_name}.png',
+        )
 
-    _, hybrid_stack_threshold = evaluator.calculate_recall_at_fpr(
-        y_test, hybrid_stack_test_scores, fpr_threshold=0.01
-    )
-    viz.plot_confusion_matrix(
-        y_test, hybrid_stack_test_scores, threshold=hybrid_stack_threshold,
-        model_name='Hybrid (Stacking) @ 1% FPR',
-        filename='confusion_matrix_hybrid_stack.png'
-    )
-
-    _, rf_threshold = evaluator.calculate_recall_at_fpr(
-        y_test, rf_test_scores, fpr_threshold=0.01
-    )
-    viz.plot_confusion_matrix(
-        y_test, rf_test_scores, threshold=rf_threshold,
-        model_name='Random Forest @ 1% FPR',
-        filename='confusion_matrix_rf.png'
-    )
-
-    # Feature importance (RF)
-    viz.plot_feature_importance(
-        rf.rf.feature_importances_,
-        loader.FEATURES,
-        top_n=15,
-    )
-
-    # Threshold analysis (RF and both Hybrids)
-    viz.plot_threshold_analysis(
-        y_test,
-        {
-            'Random Forest': rf_test_scores,
-            'Hybrid (Unsup.)': hybrid_unsup_test_scores,
-            'Hybrid (Stacking)': hybrid_stack_test_scores,
-        },
-    )
+    # Threshold analysis (all models)
+    viz.plot_threshold_analysis(y_test, model_scores)
 
     # Metrics heatmap
     viz.plot_metrics_heatmap(results)
 
     # Latent space visualization
-    print('Generating latent space visualization...')
+    print('  Generating VAE latent space visualization (t-SNE)...')
     viz.plot_latent_space(vae, X_test, y_test)
+
+    # Score correlation
+    viz.plot_score_correlation(model_scores)
+
+    # Autoencoder-specific plots
+    viz.plot_ae_feature_error(ae, X_test, y_test, loader.FEATURES)
 
     # ------------------------------------------------------------------
     # 9. Done
     # ------------------------------------------------------------------
-    print('Done.')
+    print('\n[9/9] Pipeline complete.')
+    print(f'      All figures saved to: {FIGURES}')
+    print('=' * 62)
 
 
 if __name__ == '__main__':

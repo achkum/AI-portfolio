@@ -8,12 +8,13 @@ import zipfile
 KAGGLE_DATASET = 'mlg-ulb/creditcardfraud'
 
 class CreditCardDataLoader:
+    TARGET = 'Class'
+    FEATURES = [f'V{i}' for i in range(1, 29)] + ['Amount']
+
     def __init__(self, test_size=0.2, random_state=42):
         self.scaler = StandardScaler()
         self.test_size = test_size
         self.random_state = random_state
-        self.TARGET = 'Class'
-        self.FEATURES = [f'V{i}' for i in range(1, 29)] + ['Amount']
 
     @staticmethod
     def download_from_kaggle(dest_dir):
@@ -39,7 +40,7 @@ class CreditCardDataLoader:
     def load_and_split(self, raw_path):
         df = pd.read_csv(raw_path)
 
-        if df.isnull().sum().sum() > 0:
+        if df.isnull().any().any():
             df = df.dropna()
 
         n_duplicates = df.duplicated().sum()
@@ -55,8 +56,7 @@ class CreditCardDataLoader:
             df, test_size=self.test_size, random_state=self.random_state, stratify=df[self.TARGET]
         )
 
-        train_df = train_df.copy()
-        test_df = test_df.copy()
+        # Scaler is fit on training data only to prevent data leakage into the test set.
         train_df[self.FEATURES] = self.scaler.fit_transform(train_df[self.FEATURES])
         test_df[self.FEATURES] = self.scaler.transform(test_df[self.FEATURES])
 
@@ -71,6 +71,9 @@ class CreditCardDataLoader:
         return train_df, test_df
 
     def get_unsupervised_train(self, train_df):
+        # Unsupervised models (AE, VAE, One-Class SVM) are trained exclusively on
+        # legitimate transactions so they learn a compact representation of normal
+        # behaviour. Fraud samples then produce high reconstruction error at inference.
         legit = train_df[train_df[self.TARGET] == 0]
         return legit[self.FEATURES].values
 
