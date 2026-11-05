@@ -1,6 +1,6 @@
 # AI Portfolio
 
-Machine learning, deep learning and data analysis projects by **Achyuth Kumar Baddela**. For my main applied AI projects, see [Applied-AI-Projects](https://github.com/achkum/Applied-AI-Projects).
+Machine learning and data analysis projects by **Achyuth Kumar Baddela**. For my main applied AI projects, see [Applied-AI-Projects](https://github.com/achkum/Applied-AI-Projects).
 
 ---
 
@@ -31,19 +31,6 @@ python main.py
 - **Output**: Regional comparisons, trend lines, and heatmaps in [`figures/`](./immigration_integration/figures).
 
 See the [project README](./immigration_integration/readme.md) for dataset download links and setup.
-
----
-
-## Course Projects
-
-Group projects from the MSc in Applied Artificial Intelligence at Luleå University of Technology.
-
-| Project | Course | Summary | Tech Stack |
-|---|---|---|---|
-| [Edge-Ready ECG Classification](./ecg_edge_classification) | D7043E Advanced Data Mining | Inter-patient heartbeat classification on MIT-BIH with a 10k-parameter 1D CNN, quantised to INT8 and synthesised for the MAX78002 edge AI chip. Follows all six CRISP-DM stages. | PyTorch, Scikit-Learn, ai8x toolchain |
-| [Anchor-Based Object Recognition](./anchor_object_recognition) | R7020E Computer Vision and Image Processing | Finds and localises a specific object in video from three anchor photos, comparing HSV histograms, SIFT and frozen DINOv2 embeddings, with depth cues to reject printed decoys. | OpenCV, DINOv2, PyTorch |
-| [SNN Motion Detection](./snn_motion_detection) | D7046E Neural Networks and Learning Machines | Motion-direction classification with spiking neural networks, comparing LIF networks, Reichardt detectors and STDP learning on synthetic data and DVS128 Gesture. | snnTorch, Brian2, PyTorch |
-| [Car Detection in Snow](./snow_car_detection) | D7047E Advanced Deep Learning | YOLOv9 car detection on the Nordic Vehicle Dataset with a custom snow augmentation pipeline, domain-shift evaluation and Optuna hyperparameter tuning. | YOLOv9, Ultralytics, Albumentations, Optuna, W&B |
 
 ---
 
