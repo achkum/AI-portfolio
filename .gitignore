@@ -30,3 +30,7 @@ ENV/
 # OS
 .DS_Store
 Thumbs.db
+
+# Course project result tables and saved scores
+!ecg_edge_classification/**/*.csv
+!anchor_object_recognition/**/*.csv
